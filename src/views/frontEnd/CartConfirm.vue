@@ -26,17 +26,18 @@
                 <tr v-for="cItem in remoteCarts.carts"
                 :key="cItem.id"
                   class="text-center">
-                  <td style="width: 200px;">
+                  <td style="max-width: 200px;">
                     <div>
                       <img :src="cItem.product.imageUrl"
                       class="img-thumbnail">
                     </div>
                   </td>
-                  <th>{{cItem.product.category}}</th>
+                  <th><span>{{cItem.product.category}}</span></th>
                   <td>
-                    <div class="input-group">
+                    <div class="input-group input-group-sm">
                       <button v-if="cItem.qty > 1"
-                        class="btn btn-outline-lilac"
+                        class="btn btn-outline-lilac
+                        p-1"
                         type="button"
                         @click.prevent="cItem.qty--;
                         changeCartQty(cItem, cItem.qty)"
@@ -44,13 +45,13 @@
                         <i class="bi bi-dash-lg"></i>
                       </button>
                       <button v-else
-                        class="btn btn-outline-danger"
+                        class="btn btn-outline-danger
+                        p-1"
                         type="button"
                         @click.prevent="delCart(cItem.id)"
                         >
                         <i class="bi bi-trash3-fill
-                        text-danger
-                        fs-5"></i>
+                        text-danger"></i>
                       </button>
                       <input
                         type="number"
@@ -60,7 +61,8 @@
                         v-model="cItem.qty"
                         >
                       <button
-                        class="btn btn-outline-lilac"
+                        class="btn btn-outline-lilac
+                        p-1"
                         type="button"
                         @click.prevent="cItem.qty++;
                         changeCartQty(cItem, cItem.qty)"

@@ -30,13 +30,13 @@
         align-item-md-center order-lg-2 order-1">
           <ul class="socialIcons
           list-unstyled">
-            <li><a href="">
+            <li><a href="https://www.facebook.com.tw">
               <i class="bi bi-facebook"></i>
             </a></li>
-            <li><a href="">
+            <li><a href="https://www.instagram.com/">
               <i class="bi bi-instagram"></i>
             </a></li>
-            <li><a href="">
+            <li><a href="https://line.me/tw/">
               <i class="bi bi-line"></i>
             </a></li>
           </ul>

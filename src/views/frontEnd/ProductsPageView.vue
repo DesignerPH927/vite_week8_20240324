@@ -39,17 +39,17 @@
                     height="250px;">
                   </div>
                   <div class="card-body d-flex flex-column">
-                    <h4 class="d-flex mb-4">
+                    <h5 class="d-flex">
                       <span
                       style="letter-spacing: 2px;"
                       >{{pItem.title}}</span>
                       <span class="badge text-bg-danger ms-auto">
                         {{pItem.category}}
                       </span>
-                    </h4>
-                    <h5 class="text-muted text-center mb-3">
-                      {{pItem.description}}
                     </h5>
+                    <p class="text-muted text-center">
+                      {{pItem.description}}
+                    </p>
                     <div class="d-flex justify-content-between
                     align-items-center mb-3">
                       <del class="text-muted">$ {{pItem.origin_price}}</del>

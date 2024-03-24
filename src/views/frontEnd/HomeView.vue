@@ -43,8 +43,15 @@
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                 </h4>
-                <p>
-                  希望每對戀人都能得到幸福，不會為了如何辦婚禮而苦惱。
+                <h5 class="fs-3 mb-4">創辦理念</h5>
+                <p style="text-align: justify;">
+                  『結婚』是一個幸福的語詞，是一件人生的重要大事。
+                  但是，當新人開始準備『結婚』時，才知道這真是一件「大事」！
+                  所有事情都是第一次面對，內容繁瑣又無處可尋！？
+                  於是我們出現了！
+                  希望每對戀人都能幸福結婚，不再為了籌辦婚禮而苦惱。
+                  這就是我們的宗旨！
+                  讓我們一起締造完美的婚禮吧！
                 </p>
               </div>
             </div>
@@ -84,7 +91,7 @@
                 <div class="card-title fw-bold text-center">
                   {{news.title}}
                 </div>
-                <p class="mb-0 text-truncate"
+                <p class="mb-0 text-truncate text-center"
                   style="text-align: justify;">
                   {{news.description}}
                 </p>
@@ -143,11 +150,12 @@
                   <div class="col-md-5">
                     <div class="card-body d-flex
                       flex-column h-100">
-                      <h5 class="card-title fw-bold
+                      <h4 class="card-title fw-bold
                       text-center mb-3">
                         {{userItem.category}}
-                      </h5>
-                      <p class="card-text">
+                      </h4>
+                      <p class="card-text text-center
+                      fs-5">
                         {{ userItem.content }}
                       </p>
                       <RouterLink :to="`/product/${userItem.id}`"
